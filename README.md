@@ -13,7 +13,7 @@ The project can be executed used CLI using maven or using eclipse. Download the 
 
 Go to the project workspace and built it
 
-```
+```unix
 ProjectData mayangupta$ pwd
 /Users/mayangupta/desktop/1.Project/eclipse/ProjectData-master/ProjectData
 
@@ -26,10 +26,10 @@ drwxr-xr-x@ 3 mayangupta  110263682  102 Jul 29 10:48 src
 ProjectData mayangupta$ mvn clean compile install
 ```
 
-Check if the SNAPSHOT jar file ./target/ProjectData-1.0.0-SNAPSHOT.jar. Also see we have CSV data in ./src/main/resources/data.
+Check if the SNAPSHOT jar file `./target/ProjectData-1.0.0-SNAPSHOT.jar`. Also see we have CSV data in `./src/main/resources/data`.
 If both are available then we are ready to run application it
 
-```
+```java
 java -cp ".:./target/ProjectData-1.0.0-SNAPSHOT.jar" com.packagecode.dataAnomalyMain ./src/main/resources/data/June13_data.csv
 java -cp ".:./target/ProjectData-1.0.0-SNAPSHOT.jar" com.packagecode.dataAnomalyMain ./src/main/resources/data/June14_data.csv
 java -cp ".:./target/ProjectData-1.0.0-SNAPSHOT.jar" com.packagecode.dataAnomalyMain ./src/main/resources/data/June15_data.csv
@@ -70,5 +70,5 @@ Anomaly happened at time : 2018-06-18 00:59:00 Data :12876.0 Mean :11276.0 StdDe
 * [Eclipse](https://www.eclipse.org/downloads/) - Eclipse is an IDE used in computer programming
 
 
-## Authors
+## Author
 Mayank Gupta
