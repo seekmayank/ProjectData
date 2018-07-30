@@ -40,7 +40,7 @@ If both are available then we are ready to run application it
 ```java
 java -cp ".:./target/ProjectData-1.0.0-SNAPSHOT.jar" com.packagecode.dataAnomalyMain ./src/main/resources/data/June13_data.csv
 java -cp ".:./target/ProjectData-1.0.0-SNAPSHOT.jar" com.packagecode.dataAnomalyMain ./src/main/resources/data/June14_data.csv
-java -cp ".:./target/ProjectData-1.0.0-SNAPSHOT.jar" com.packagecode.dataAnomalyMain ./src/main/resources/data/June15_data.csv
+java -cp ".:./target/ProjectData-1.0.0-SNAPSHOT.jar" com.packagecode.dataAnomalyMain ./src/main/resources/data/June16_data.csv
 java -cp ".:./target/ProjectData-1.0.0-SNAPSHOT.jar" com.packagecode.dataAnomalyMain ./src/main/resources/data/June17_data.csv
 
 ```
