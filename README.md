@@ -17,7 +17,7 @@ I have used z-score & simple z-test to find data anomaly. As per central limit t
 ## Installing & Running Application
 The project can be executed on CLI using maven or using Eclipse IDE. Download the git project zip `ProjectData-master.zip`.
 
-**Using CLI Maven:**
+**Using CLI Maven on Mac OS:**
 
 Go to the project workspace and built it
 
