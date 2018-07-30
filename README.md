@@ -59,7 +59,7 @@ Success:: No anomaly found in data
 
 For data file June17_data O/P will be 
 ```
-Anomaly arr[] : [0, 3, 2, 2, 1, 0, 0, 0, 1, 3, 2, 4, 3, 4, 3, 3, 3, 6, 3, 0, 1, 1, 0, 3]
+Anomaly/Sample arr[] : [0, 3, 2, 2, 1, 0, 0, 0, 1, 3, 4, 5, 3, 4, 3, 3, 4, 6, 3, 0, 1, 1, 0, 3]
 
 Failure:: Anomaly detected in data
 
