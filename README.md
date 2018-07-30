@@ -8,7 +8,7 @@ I have used z-score & simple z-test to find data anomaly. As per central limit t
 - I have divided data hourly in 24 samples each of sample size 60.
 - I then computed mean and standard deviation for each 24 samples.
 - I then computed z-score for all data points using logic of abs((x-mean)/standard-deviation)
-- Once I got z-score for all data points I checked anomaly data points for each sample bucket by checking if data point is > 1.96.
+- Once I got z-score for all data points I checked anomaly data points for each sample bucket by checking if z-score of data point is > 1.96.
 - After this I have got anomaly count for each 24 samples.
 - Since 5% of sample size 60 is 3 with a p-value of 0.05.
 - To avoid false positive & false negative I have used anomaly count > 5 which is 10% tail test and p-value ~ 0.10
