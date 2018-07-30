@@ -3,15 +3,15 @@ Data Anomaly Detection
 
 
 ## Algorithm
-I have used z-score & simple z-test to find data anomaly. As per central limit theorem, many test statistics are approximately normally distributed for large samples. For significance level of 5% two tailed z-score for 95% should fall under a value of 1.96. Here is algorithm logic:
+I have used z-score & simple z-test to find data anomaly. As per central limit theorem, many test statistics are approximately normally distributed for large samples. For significance level of 5% two-tailed test 95% of data fall under a value z-score of 1.96. Here is algorithm logic of my application:
 - We have total 60*24=1440 data points for a day where each data point represent 1 min data.
-- I have divided data hourly in 24 samples each of sample size 60.
+- I have divided data hourly in **24 samples** each of sample size 60.
 - I then computed mean and standard deviation for each 24 samples.
-- I then computed z-score for all data points using logic of abs((x-mean)/standard-deviation)
+- I then computed z-score for all data points using logic of **abs((x-mean)/standard-deviation)**
 - Once I got z-score for all data points I checked anomaly data points for each sample bucket by checking if z-score of data point is > 1.96.
 - After this I have got anomaly count for each 24 samples.
-- Since 5% of sample size 60 is 3 with a p-value of 0.05.
-- To avoid false positive & false negative I have used anomaly count > 5 which is 10% tail test and p-value ~ 0.10
+- Since 5% of sample size 60 is 3 data anomaly with a **p-value of 0.05**.
+- To avoid false positive & false negative I have used anomaly **count > 5** which is 10% of two-tailed test and **p-value of 0.10**
 
 
 ## Installing & Running Application
