@@ -92,13 +92,15 @@ public class dataAnomalyAlgo {
         	if (sample < sampleSize)
         	{
         		double x=(dataPoint[0][j]-arryMean[z])/arryStdev[z];
-        		dataPoint[2][j]=(int) Math.ceil(Math.abs(x));
+        		//dataPoint[2][j]=(int) Math.ceil(Math.abs(x));
+        		dataPoint[2][j]= Math.abs(x);
         		sample++;
         	}
         	else
         	{
         		double x=(dataPoint[0][j]-arryMean[z])/arryStdev[z];
-        		dataPoint[2][j]=(int) Math.ceil(Math.abs(x));
+        		//dataPoint[2][j]=(int) Math.ceil(Math.abs(x));
+        		dataPoint[2][j]= Math.abs(x);
                 z++;
                 sample=1;
         	}
@@ -115,7 +117,7 @@ public class dataAnomalyAlgo {
         for (int j=0; j< 1440;j++) {
         	if (sample < sampleSize)
         	{   
-        		if (dataPoint[2][j] >= 3) {
+        		if (dataPoint[2][j] > 1.96) {
         			anomalyCnt++;
         			dataPoint[3][j]=anomalyCnt;
         		}
@@ -123,7 +125,7 @@ public class dataAnomalyAlgo {
         	}
         	else
         	{
-        		if (dataPoint[2][j] >= 3) {
+        		if (dataPoint[2][j] > 1.96) {
         			anomalyCnt++;
         			dataPoint[3][j]=anomalyCnt;
         		}

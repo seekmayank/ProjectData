@@ -13,7 +13,7 @@ public class dataAnomalyMain {
 		obj.setSampleSize(60);
 
 		//Reading CSV data into an array
-		obj.getDataFileIntoArray(args[0]);
+		obj.getDataFileIntoArray("data/June17_data.csv");
         
 		//Calculating Sample Mean & Standard Deviation for breaking data in multiple sample.
 		double[][] arryMeanStd = obj.calSampleMeanStandardDeviation();
