@@ -14,7 +14,7 @@ I have used z-score & simple z-test to find data anomaly. As per central limit t
 - To avoid false positive & false negative I have used anomaly count > 5 which is 10% tail test and p-value ~ 0.10
 
 
-## Installing
+## Installing & Running Application
 The project can be executed on CLI using maven or using Eclipse IDE. Download the git project.
 
 **Using CLI Maven:**
@@ -50,7 +50,7 @@ Import maven project in eclipse and open dataAnomalyMain.java class file.
 Go to Run Configurations and pass arguments as data/June17_data.csv and Run it.
 
 
-## Running Application
+## Application Results
 
 For data file June13_data June14_data June16_data O/P will be 
 ```
