@@ -3,11 +3,19 @@ Data Anomaly Detection
 
 
 ## Algorithm
-What things you need to install the software and how to install them
+I have used z-score & simple z-test to find data anomaly. As per central limit theorem, many test statistics are approximately normally distributed for large samples. For significance level of 5% two tailed z-score for 95% should fall under 1.96. Here is algorithm logic:
+- We have total 60*24=1440 data points for a day where each data point represent 1 min data.
+- I have divide data hourly in 24 samples each of sample size 60.
+- I then computed mean and standard deviation for each 24 samples.
+- I then computed z-score for all data points using logic of (x-mean)/standard-deviation
+- Once I get z-score for all data points I checked anomaly data point for each sample bucket how many data point are > 1.96.
+- After this we get anomaly count for each 24 samples.
+- Since 5% of sample size 60 is 3 with a p-value of 0.05.
+- To avoid false positive & false negative I have used anomaly count > 5 which is 10% tail test and p-value ~ 0.10
 
 
 ## Installing
-The project can be executed used CLI using maven or using eclipse. Download the git project.
+The project can be executed on CLI using maven or using Eclipse IDE. Download the git project.
 
 **Using CLI Maven:**
 
