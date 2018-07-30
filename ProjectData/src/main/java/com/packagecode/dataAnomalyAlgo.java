@@ -92,7 +92,6 @@ public class dataAnomalyAlgo {
         	if (sample < sampleSize)
         	{
         		double x=(dataPoint[0][j]-arryMean[z])/arryStdev[z];
-        		//dataPoint[2][j]=(int) Math.ceil(Math.abs(x));
         		dataPoint[2][j]= Math.abs(x);
         		sample++;
         	}
